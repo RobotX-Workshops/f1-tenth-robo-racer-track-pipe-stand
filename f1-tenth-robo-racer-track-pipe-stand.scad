@@ -30,13 +30,13 @@ module stand(box_length = 200, box_width = 50, box_height = 180, hole_radius = 1
         rotate([90, 0, 180])
         linear_extrude(height = box_width)
         translate([-(side_triangle_width), 0, 0])
-        upside_down_triangle(height = 100, width = 55);
+        upside_down_triangle();
         
         // Second triangular cut-out
         rotate([90, 0, 180])
         linear_extrude(height = box_width)
         translate([-box_length - (side_triangle_width), 0, 0])
-        upside_down_triangle(height = 100, width = 55);
+        upside_down_triangle();
     }
 }
 
